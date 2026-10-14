@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; padding: 24px 14px;
+  font-family: Arial, sans-serif; color: #202638;
+  background: linear-gradient(135deg, #e9f2ff, #fce9f1);
+}
+.card {
+  width: min(100%, 560px); margin: 0 auto; padding: 28px;
+  background: #fff; border-radius: 16px; box-shadow: 0 10px 35px #25385820;
+}
+h1 { margin: 0 0 8px; color: #234e91; }
+.subtitle { margin-top: 0; color: #687386; }
+form { display: grid; gap: 8px; }
+label { margin-top: 8px; font-weight: 700; font-size: .95rem; }
+input, select {
+  width: 100%; padding: 11px 12px; border: 1px solid #cbd3df;
+  border-radius: 8px; font: inherit; background: #fff;
+}
+input:focus, select:focus { outline: 2px solid #8ab4ff; border-color: #356ac3; }
+input.invalid, select.invalid { border-color: #c62828; }
+.error { min-height: 0; color: #c62828; font-size: .82rem; }
+button {
+  margin-top: 16px; border: 0; border-radius: 9px; padding: 13px;
+  background: #2457a7; color: #fff; font-size: 1rem; font-weight: 700; cursor: pointer;
+}
+button:hover { background: #173e7b; }
+#formMessage { font-weight: 700; }
+#formMessage.success { color: #167442; }
+#formMessage.failure { color: #c62828; }
+@media (max-width: 480px) { .card { padding: 20px 16px; } h1 { font-size: 1.5rem; } }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Student Registration</h1>
+    <p class="subtitle">Enter your details to register.</p>
+
+    <form id="registrationForm" novalidate>
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <small class="error" id="nameError"></small>
+
+      <label for="rollNumber">Roll number</label>
+      <input id="rollNumber" name="rollNumber" type="text" required>
+      <small class="error" id="rollError"></small>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <small class="error" id="emailError"></small>
+
+      <label for="course">Course</label>
+      <select id="course" name="course" required>
+        <option value="">Choose a course</option>
+        <option value="CSE">Computer Science and Engineering</option>
+        <option value="IT">Information Technology</option>
+        <option value="ECE">Electronics and Communication</option>
+        <option value="EEE">Electrical and Electronics</option>
+        <option value="MECH">Mechanical Engineering</option>
+      </select>
+      <small class="error" id="courseError"></small>
+
+      <label for="document">Upload profile document (PDF/JPG/PNG, max 2 MB)</label>
+      <input id="document" name="document" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+      <small class="error" id="fileError"></small>
+
+      <label for="password">Password (minimum 8 characters)</label>
+      <input id="password" name="password" type="password" autocomplete="new-password" required>
+      <small class="error" id="passwordError"></small>
+
+      <label for="confirmPassword">Confirm password</label>
+      <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required>
+      <small class="error" id="confirmError"></small>
+
+      <button type="submit">Register</button>
+      <p id="formMessage" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+</body>
+</html>

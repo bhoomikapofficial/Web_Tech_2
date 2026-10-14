@@ -1,0 +1,3 @@
+**/target/
+Q2_PHP_MySQL/uploads/*
+!Q2_PHP_MySQL/uploads/.gitkeep
